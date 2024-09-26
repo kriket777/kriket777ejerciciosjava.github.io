@@ -1,0 +1,231 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="ejercicios.js"></script>
+</head>
+<body>
+    <h1>Ejercicios Javascript</h1>
+ 
+    <div class="container">
+        <nav id="indice">
+            <ul>
+                <h2>INDICE</h2>
+                <li><a href="#problema1">1. Ganancia por Inversión Bancaria</a></li>
+                <li><a href="#problema2">2. Sueldo con Comisiones</a></li>
+                <li><a href="#problema3">3. Descuento De Compra</a></li>
+                <li><a href="#problema4">4. Calificación Final</a></li>
+                <li><a href="#problema5">5. Calcular Edad</a></li>
+                <li><a href="#problema6">6. Palabras a Números</a></li>
+                <li><a href="#problema7">7. Salario con Horas Extras</a></li>
+                <li><a href="#problema8">8. Utilidad por Antigüedad</a></li>
+                <li><a href="#problema9">9. Calculo del DNI</a></li>
+                <li><a href="#problema10">10.Registro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="problema1" class="problema">
+        <h2>Ganancia por Inversión Bancaria</h2>
+        <p>Ingresa tu capital inicial</p>
+        <form>
+            <div class="form1">
+                <input type="number" id="capital" placeholder="Ingresa el capital inicial">
+                <button class="button" onclick="calcularInteres()">Calcular Interés</button>
+                <button class="button" type="reset">Borrar</button>
+            </div>
+        </form>
+        <div class="result" id="resultado"></div>
+        <a href="#indice" class="INDICE">INDICE</a>
+    </section>
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema2" class="problema">
+        <h2>Calculadora de Salario con Comisiones</h2>
+        <form>
+            <div class="form1">
+                <p>Ingresa el sueldo base</p>
+                <input type="number" id="suelBase" placeholder="Sueldo Base">
+            </div>
+            <div class="form1">
+                <p>Ingresa el valor de la venta 1</p>
+                <input type="number" id="ven1" placeholder="Venta 1">
+            </div>
+            <div class="form1">
+                <p>Ingresa el valor de la venta 2</p>
+                <input type="number" id="vent2" placeholder="Venta 2">
+            </div>
+            <div class="form1">
+                <p>Ingresa el valor de la venta 3</p>
+                <input type="number" id="vent3" placeholder="Venta 3">
+            </div>
+            <div class="form1">
+                <button class="button" onclick="calcularSalario()">Calcular Salario</button>
+                <button class="button" type="reset">RESET</button>
+        </form>
+        </div>
+        <div class="result" id="resltSalari"></div>
+        <a href="#indice">INDICE</a>
+    </section>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema3" class="problema">
+        <h2>Total con Descuento</h2>
+        <p>Ingresa el precio total de la compra</p>
+        <form>
+            <div class="form1">
+                <input type="number" id="totalCompra" placeholder="Precio Total">
+                <br/>
+                <button class="button" onclick="calcularDescuento()">Calcular el descuento</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <div class="result" id="resultadoDescuento"></div>
+        <a href="#indice">INDICE</a>
+    </section>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema4" class="problema">
+        <h2>Calificación Final del Alumno</h2>
+        <form>
+            <div class="form1">
+                <p>Ingresa la calificación del parcial 1:</p>
+                <input type="number" id="par1" placeholder="Parcial 1">
+            </div>
+            <div class="form1">
+                <p>Ingresa la calificación del parcial 2:</p>
+                <input type="number" id="par2" placeholder="Parcial: 2">
+            </div>
+            <div class="form1">
+                <p>Ingresa la calificación del parcial 3:</p>
+                <input type="number" id="par3" placeholder="Parcial 3">
+            </div>
+            <div class="form1">
+                <p>Ingresa la calificación del examen final:</p>
+                <input type="number" id="exaF" placeholder="Examen Final">
+            </div>
+            <div class="form1">
+                <p>Ingresa la calificación del trabajo final:</p>
+                <input type="number" id="traf" placeholder="Trabajo Final">
+            </div>
+            <div class="form1">
+                <button class="button" onclick="calcularCalificacion()">Calcular Calificación</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <div class="result" id="rescali"></div>
+        <a href="#indice">INDICE</a>
+    </section>   
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema5" class="problema">
+        <h2>Calcular Edad</h2>
+        <p>Ingresa tu año de nacimiento:</p>
+        <form>
+            <div class="form1">
+                <input type="number" id="anioNacimiento" placeholder="Año de Nacimiento">
+                <button class="button" onclick="calcularEdad()">Calcular Edad</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <div class="result" id="resulEdad"></div>
+        <a href="#indice">INDICE</a>
+    </section>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema6" class="problema">
+        <h2>Palabras a Números</h2>
+        <p>Ingresa palabras separadas por comas ,ejemplo: "foca, tren, gato" :</p>
+        <form>
+            <div class="form1">
+                <input type="text" id="palbrs">
+                <button class="button" onclick="palabrasANumeros()">Convertir</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <div class="result" id="resulpalbrs"></div>
+        <a href="#indice">INDICE</a>
+    </section>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema7" class="problema">
+        <h2>Salario con Horas Extras</h2>
+        <form>
+            <div class="form1">
+                <p>Ingresa las horas trabajadas a la semana:</p>
+                <input type="number" id="hrsTrbjds" >
+            </div>
+            <div class="form1">
+                <p>Ingresa tu pago por hora:</p>
+                <input type="number" id="pagoHora" >
+            </div>
+            <div class="form1">
+                <button onclick="calcularHorasExtras()">Calcular Pago</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <p id="resulthE"></p>
+        <a href="#indice">INDICE</a>
+    </section>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema8" class="problema">
+        <h2>Utilidad por Antigüedad</h2>
+        <form>
+            <div class="form1">
+                <p>Salario mensual:</p>
+                <input type="number" id="salariomen" placeholder="Salario">
+            </div>
+            <div class="form1">
+                <p>Antigüedad en años:</p>
+                <input type="number" id="antig" placeholder="Antigüedad">
+            </div>
+            <div class="form1">
+                <button onclick="calcularUtilidad()">Calcular Utilidad</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <p id="resulutili"></p>
+        <a href="#indice">INDICE</a>
+    </section>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema9" class="problema">
+        <h2>Calculo del DNI</h2>
+        <form>
+            <div class="form1">
+                <input type="number" id="dni" placeholder="Número de DNI">
+                <button onclick="calcularLetraDNI()">Calcular Letra</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <p id="resDNI"></p>
+        <a href="#indice">INDICE</a>
+    </section>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <section id="problema10" class="problema">
+        <h2>Formulario de Registro</h2>
+       
+        <form id="formularioRegistro"  onsubmit="return validarFormulario()">
+            <div class="form1">
+                <input type="text"  required placeholder="Nombre" id="nombre" /> 
+            </div>
+            <div class="form1">
+                
+                <input type="email" id="email" required  placeholder="Email">
+            </div>
+            
+            <div class="form1">
+                
+                <input type="password" id="password" required placeholder="Contraseña">
+            </div>
+            <div class="form1"></div>
+                <textarea rows="10" cols="50" maxlength="50" id="coment" required placeholder="Comentarios"></textarea><br/><br/></div>   
+            </div>
+            <div class="form1">
+                <input type="checkbox" id="aceptoCon" required >
+                <p>Acepto las condiciones del servicio</p>
+            </div>
+            <div class="form1">
+                <button type="submit">Enviar</button>
+                <button class="button" type="reset">RESET</button>
+            </div>
+        </form>
+        <p id="resVali"></p>
+        <a href="#indice">INDICE</a>
+    </section>
+</body>
